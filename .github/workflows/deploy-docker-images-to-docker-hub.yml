@@ -18,27 +18,21 @@ jobs:
           - experimental: true
             tag: latest
             golang_image: golang:latest
-          - experimental: true
+          - experimental: false
             tag: "1.18"
             golang_image: golang:1.18
-          - experimental: true
+          - experimental: false
             tag: "1.17"
             golang_image: golang:1.17
-          - experimental: false
-            tag: "1.16"
-            golang_image: golang:1.16
           - experimental: true
             tag: "latest-bitnami"
             golang_image: bitnami/golang:latest
-          - experimental: true
+          - experimental: false
             tag: "1.18-bitnami"
             golang_image: bitnami/golang:1.18
-          - experimental: true
+          - experimental: false
             tag: "1.17-bitnami"
             golang_image: bitnami/golang:1.17
-          - experimental: true
-            tag: "1.16-bitnami"
-            golang_image: bitnami/golang:1.16
 
     steps:
       -
